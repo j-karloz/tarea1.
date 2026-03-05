@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mis Películas</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+    <h1>Mis Películas Favoritas</h1>
+    <nav>
+      <a href="index.html">Inicio</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="carrusel">
+      <img src="https://m.media-amazon.com/images/M/MV5BZDYxY2I1OGMtN2Y4MS00ZmU1LTgyNDAtODA0MzAyYjI0N2Y2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Avatar">
+      <img src="https://static.wikia.nocookie.net/michaelbaystransformers/images/7/7a/Transformers_One_Teaser_Poster.jpg/revision/latest?cb=20240418164655" alt="Transformes">
+      <img src="https://m.media-amazon.com/images/M/MV5BZDRkODJhOTgtOTc1OC00NTgzLTk4NjItNDgxZDY4YjlmNDY2XkEyXkFqcGc@._V1_FMjpg_UX1000_.jpg" alt="Mad Max">
+    </div>
+  </main>
+  <section>
+      <h2>Datos de Peliculas</h2>
+      <ul>
+        <li><strong>Nombre:</strong> Avatar</li>
+        <li><strong>Sinapsis:</strong> un mundo de ciencia ficcion en el cual unas criaturas azules</li>
+        <li><strong>Clasificacion:</strong> accion / ciencia ficcion</li>
+        <li><strong>Año:</strong> 2026</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Datos de Peliculas</h2>
+      <ul>
+        <li><strong>Nombre:</strong> Transformer</li>
+        <li><strong>Sinapsis:</strong> un mundo de ciencia ficcion en el cual extraterestres mecanicos llegan a la tierra</li>
+        <li><strong>Clasificacion:</strong> accion / ciencia ficcion</li>
+        <li><strong>Año:</strong> 2026</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Datos de Peliculas</h2>
+      <ul>
+        <li><strong>Nombre:</strong> Mad Max</li>
+        <li><strong>Sinapsis:</strong> un mundo de pos apocalipto donde los recursos son escasos</li>
+        <li><strong>Clasificacion:</strong> accion </li>
+        <li><strong>Año:</strong> 2024</li>
+      </ul>
+    </section>
+
+  <footer>
+    <p>&copy; 2025 - Todos los derechos reservados</p>
+  </footer>
+
+  <script>
+    let index = 0;
+    const images = document.querySelectorAll('.carrusel img');
+    setInterval(() => {
+      images.forEach((img, i) => {
+        img.style.display = (i === index) ? 'block' : 'none';
+      });
+      index = (index + 1) % images.length;
+    }, 5000);
+  </script>
+</body>
+</html>

@@ -1,0 +1,49 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f7f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #9da7d9;
+  color: white;
+  padding: 15px;
+  text-align: center;
+}
+
+nav a {
+  color: white;
+  margin: 0 10px;
+  text-decoration: none;
+}
+
+.foto-perfil {
+  position: absolute;   /* La sacamos del flujo normal */
+  top: 150px;            /* Distancia desde arriba */
+  right: 150px;          /* Distancia desde la derecha */
+  width: 150px;         /* Ajusta el tamaño */
+  border-radius: 50%;   /* Opcional: hace la foto circular */
+  border: 2px solid #333; /* Opcional: borde */
+}
+
+.carrusel {
+  position: relative;
+  width: 400px;
+  height: 250px;
+  margin: auto;
+  overflow: hidden;
+}
+
+.carrusel img {
+  position: absolute;
+  width: 1000%;
+  height: 1000%;
+  object-fit: cover;
+  display: none;
+  transition: transform 0.5s ease, filter 0.5s ease;
+}
+
+.carrusel img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2);
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Mi Perfil</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+  <header>
+  <h1>Bienvenido a mi sitio </h1>
+  <nav>
+    <a href="index.html"> inicio curriculum</a> |
+    <a href="peliculas.html">Mis Películas</a>
+  </nav>
+</header>
+<main>
+     <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRI4YLt3aOA800OEZAR3uKc1yLuiB7FZTez8Q&s" 
+     alt="Foto de perfil" 
+     class="foto-perfil">
+    <section>
+      <h2>Datos Personales</h2>
+      <ul>
+        <li><strong>Nombre:</strong> Juan Carlos Costas Negrete</li>
+        <li><strong>Email:</strong> karlozcoztaz@email.com</li>
+        <li><strong>Teléfono:</strong> +591 72128543</li>
+        <li><strong>Ciudad:</strong> Santa Cruz de la Sierra, Bolivia</li>
+      </ul>
+    </section>
+    </section>
+
+    <section>
+      <h2>Formación Académica</h2>
+      <ul>
+        <li>Estudiante de Ingeniería de Sistemas – Universidad Privada Cumbre (2023 - Actualidad)</li>
+        <li>Bachiller en Humanidades – Colegio 24 de Septiembre (2014)</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Experiencia</h2>
+      <ul>
+        <li>Proyecto personal: Sitio web de portafolio</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Habilidades</h2>
+      <ul>
+        <li>HTML, CSS y JavaScript</li>
+        <li>Trabajo en equipo y liderazgo</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Idiomas</h2>
+      <ul>
+        <li>Español (nativo)</li>
+        <li>Inglés (basico)</li>
+      </ul>
+    </section>
+
+
+   
+  </main>
+
+  <footer>
+    <p>&copy; 2025 - Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>
